@@ -12,11 +12,13 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Template Key", name: "contentType", widget: "hidden", default: "blog"}
+      - {label: "Content Type", name: "contentType", widget: "hidden", default: "blog"}
       - {label: "Path", name: "path", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Attachments", name: "attachments", widget: "list", fields: [{label: "Filename", widget: "file"}] }
+      - {label: "Related", name: "related", widget: "list", fields: [{label: "Post", widget: "relation", collection: "blog", searchFields: [title], valueField: path}] }
 
   - name: "about"
     label: "About"
@@ -24,7 +26,7 @@ collections:
     create: false
     slug: "{{slug}}"
     fields:
-      - {label: "Template Key", name: "contentType", widget: "hidden", default: "about"}
+      - {label: "Content Type", name: "contentType", widget: "hidden", default: "about"}
       - {label: "Path", name: "path", widget: "hidden", default: "/about"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
