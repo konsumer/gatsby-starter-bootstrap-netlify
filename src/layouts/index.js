@@ -13,7 +13,10 @@ import 'prismjs/themes/prism-twilight.css'
 import './index.scss'
 
 const TemplateWrapper = ({ children, data }) => {
-  const user = window ? window.netlifyIdentity && window.netlifyIdentity.currentUser() : undefined
+  let user
+  if (typeof window !== 'undefined') {
+    user = window.netlifyIdentity && window.netlifyIdentity.currentUser()
+  }
   return (
     <div>
       <Helmet>
