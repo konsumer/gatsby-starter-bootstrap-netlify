@@ -17,8 +17,8 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Attachments", name: "attachments", widget: "list", fields: [{label: "Filename", widget: "file"}] }
-      - {label: "Related", name: "related", widget: "list", fields: [{label: "Post", widget: "relation", collection: "blog", searchFields: [title], valueField: path}] }
+      - {label: "Attachments", name: "attachments", widget: "list", fields: [{name: "filename", label: "Filename", widget: "file"}] }
+      - {label: "Related", name: "related", widget: "list", fields: [{name: "post", label: "Post", widget: "relation", collection: "blog", searchFields: [title], valueField: path}] }
 
   - name: "about"
     label: "About"

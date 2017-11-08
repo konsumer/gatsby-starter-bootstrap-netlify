@@ -4,9 +4,9 @@ path: /madeinadmin
 title: 'This was made in the admin, complete with an image'
 date: 2017-11-08T06:15:05.907Z
 attachments:
-  - undefined: /files/hynocat.jpg
+  - filename: /files/hynocat.jpg
 related:
-  - undefined: /einstein
+  - post: /einstein
 ---
 Images work.
 
