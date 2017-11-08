@@ -8,4 +8,4 @@ In 1905, **Albert Einstein** determined that the laws of physics are the same fo
 
 
 
-![einstein](./img/einstein.jpg)
+![einstein](/files/einstein.jpg)

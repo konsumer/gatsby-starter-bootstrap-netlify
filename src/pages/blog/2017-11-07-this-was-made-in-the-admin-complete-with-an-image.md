@@ -6,4 +6,4 @@ date: 2017-11-08T06:15:05.907Z
 ---
 Images work.
 
-![computer guy](/./img/tumblr_nilmmbd4qq1ssby0io1_540.gif)
+![computer guy](/files/tumblr_nilmmbd4qq1ssby0io1_540.gif)

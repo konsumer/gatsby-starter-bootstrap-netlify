@@ -8,4 +8,4 @@ Information theory studies the quantification, storage, and communication of inf
 
 
 
-![shannon](./img/shannon.png)
+![shannon](/files/shannon.png)
