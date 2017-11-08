@@ -16,6 +16,14 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+          'gatsby-remark-responsive-image',
+          {
+            resolve: 'gatsby-remark-copy-linked-files',
+            options: {
+              imagesPath: '*',
+              linksPath: '*'
+            }
+          },
           {
             resolve: 'gatsby-remark-images',
             options: {

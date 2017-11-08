@@ -11,7 +11,9 @@
     "gatsby-plugin-netlify": "^1.0.7",
     "gatsby-plugin-react-helmet": "^1.0.5",
     "gatsby-plugin-sass": "^1.0.12",
+    "gatsby-remark-copy-linked-files": "^1.5.16",
     "gatsby-remark-images": "^1.5.18",
+    "gatsby-remark-responsive-image": "^1.0.0-alpha13-alpha.435e0178",
     "gatsby-source-filesystem": "^1.5.5",
     "gatsby-transformer-remark": "^1.7.17",
     "reactstrap": "^5.0.0-alpha.3"
