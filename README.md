@@ -2,7 +2,7 @@
 
 [Bootstrap 4](http://getbootstrap.com/), [bootswatch](https://bootswatch.com/) and netlify CMS starter for Gatsby
 
-This repo contains an example blog that is built with [Gatsby](https://www.gatsbyjs.org/), and [Netlify CMS](netlifycms.org): https://gatsby-netlify-cms.netlify.com/.
+This repo contains an example blog that is built with [Gatsby](https://www.gatsbyjs.org/), and [Netlify CMS](https://netlifycms.org): [demo](https://gatsby-netlify-cms.netlify.com/)
 
 It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](netlify.com) for continuous deployment, and CDN distribution.
 
@@ -10,17 +10,19 @@ It follows the [JAMstack architecture](https://jamstack.org) by using Git as a s
 
 ### Prerequisites
 
-- Node (I recommend using v8.2.0 or higher)
-- [Gatsby CLI](https://www.gatsbyjs.org/docs/)
+* Node (I recommend using v8.2.0 or higher)
+* [Gatsby CLI](https://www.gatsbyjs.org/docs/)
 
 ### Run Locally
-```
+
+```sh
 gatsby new [SITE_DIRECTORY_NAME] https://github.com/konsumer/gatsby-starter-bootstrap-netlify/
-$ cd [SITE_DIRECTORY_NAME]
-$ npm start
+cd [SITE_DIRECTORY_NAME]
+npm start
 ```
 
 ## Accessing the CMS
+
 Follow the [Netlify CMS Quick Start Guide](https://www.netlifycms.org/docs/quick-start/#authentication) to set up authentication, and hosting.
 
 You should add the recommended post-build code, and save to Github, and enable all the stuff they mention in "Identity" section.
@@ -28,7 +30,7 @@ You should add the recommended post-build code, and save to Github, and enable a
 
 ### Configuration
 
-Set stuff up in `gatsby-config.js`. Edit your pages with netlify CMS.
+Set your site's title in `gatsby-config.js`. Edit your pages with netlify CMS.
 
 
 ### Theming
@@ -57,14 +59,4 @@ You can quickly load any theme from [bootswatch](https://bootswatch.com/) by edi
 * united
 * yeti
 
-- - -
-
-### Debugging
-Windows users might encounter ```node-gyp``` errors when trying to npm install.
-To resolve, make sure that you have both Python 2.7 and the Visual C++ build environment installed.
-```
-npm config set python python2.7 
-npm install --global --production windows-build-tools
-```
-
-[Full details here](https://www.npmjs.com/package/node-gyp 'NPM node-gyp page')
+You can also comment/uncomment lines in that file to customize exactly what parts of bootstrap are loaded.
