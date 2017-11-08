@@ -56,6 +56,7 @@ export default function Template ({ data }) {
           </Card>
         ))}
       </CardGroup></Container>)}
+
       {data.site.siteMetadata.disqus && (<Container>
         <hr />
         <div id='disqus_thread' />

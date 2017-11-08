@@ -12,37 +12,45 @@ import 'prismjs/themes/prism-twilight.css'
 // main site style
 import './index.scss'
 
-const TemplateWrapper = ({ children, data }) => (
-  <div>
-    <Helmet>
-      <title>{`Home | ${data.site.siteMetadata.title}`}</title>
+const TemplateWrapper = ({ children, data }) => {
+  const user = window.netlifyIdentity && window.netlifyIdentity.currentUser()
+  return (
+    <div>
+      <Helmet>
+        <title>{`Home | ${data.site.siteMetadata.title}`}</title>
 
-      <script src='https://identity.netlify.com/v1/netlify-identity-widget.js' />
-      <script>{`
-        if (window.netlifyIdentity) {
-          window.netlifyIdentity.on('init', user => {
-            if (!user) {
-              window.netlifyIdentity.on('login', () => {
-                document.location.href = '/admin/'
-              })
-            }
-          })
-        }
-      `}</script>
-    </Helmet>
-    <div className='navbar navbar-expand-lg fixed-top navbar-dark bg-primary'>
-      <Container>
-        <Link to='/' className='navbar-brand'>{data.site.siteMetadata.title}</Link>
-        <ul className='nav navbar-nav ml-auto'>
-          <li className='nav-item'>
-            <Link to='/about' className='nav-link'>About</Link>
-          </li>
-        </ul>
-      </Container>
+        <script src='https://identity.netlify.com/v1/netlify-identity-widget.js' />
+        <script>{`
+          if (window.netlifyIdentity) {
+            window.netlifyIdentity.on('init', user => {
+              if (!user) {
+                window.netlifyIdentity.on('login', () => {
+                  document.location.href = '/admin/'
+                })
+              }
+            })
+          }
+        `}</script>
+      </Helmet>
+      <div className='navbar navbar-expand-lg fixed-top navbar-dark bg-primary'>
+        <Container>
+          <Link to='/' className='navbar-brand'>{data.site.siteMetadata.title}</Link>
+          <ul className='nav navbar-nav ml-auto'>
+            {user && (
+              <li className='nav-item'>
+                <Link to='/admin' className='nav-link'>Admin</Link>
+              </li>
+            )}
+            <li className='nav-item'>
+              <Link to='/about' className='nav-link'>About</Link>
+            </li>
+          </ul>
+        </Container>
+      </div>
+      <div>{children()}</div>
     </div>
-    <div>{children()}</div>
-  </div>
-)
+  )
+}
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func
