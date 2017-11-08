@@ -13,7 +13,7 @@ import 'prismjs/themes/prism-twilight.css'
 import './index.scss'
 
 const TemplateWrapper = ({ children, data }) => {
-  const user = window && window.netlifyIdentity && window.netlifyIdentity.currentUser()
+  const user = window ? window.netlifyIdentity && window.netlifyIdentity.currentUser() : undefined
   return (
     <div>
       <Helmet>
@@ -31,6 +31,7 @@ const TemplateWrapper = ({ children, data }) => {
             })
           }
         `}</script>
+
       </Helmet>
       <div className='navbar navbar-expand-lg fixed-top navbar-dark bg-primary'>
         <Container>
