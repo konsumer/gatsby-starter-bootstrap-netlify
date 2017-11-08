@@ -1,0 +1,30 @@
+{
+  "name": "gatsby-starter-bootstrap",
+  "description": "Example Gatsby, Bootstrap, and Netlify CMS project",
+  "version": "1.0.0",
+  "author": "David Konsumer <konsumer@jetboystudio.com>",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "bootswatch": "^4.0.0-beta.2",
+    "gatsby": "^1.9.63",
+    "gatsby-link": "^1.6.21",
+    "gatsby-plugin-react-helmet": "^1.0.5",
+    "gatsby-plugin-sass": "^1.0.12",
+    "gatsby-remark-images": "^1.5.18",
+    "gatsby-source-filesystem": "^1.5.5",
+    "gatsby-transformer-remark": "^1.7.17",
+    "reactstrap": "^5.0.0-alpha.3"
+  },
+  "keywords": [
+    "gatsby",
+    "bootstrap",
+    "bootswatch",
+    "netlify"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "start": "gatsby develop"
+  },
+  "devDependencies": {}
+}
