@@ -7,7 +7,23 @@ attachments:
   - filename: /files/hynocat.jpg
 related:
   - post: /einstein
+  - post: /claude
+  - post: /intro-to-graphql
 ---
 Images work.
 
 ![computer guy](/files/tumblr_nilmmbd4qq1ssby0io1_540.gif)
+
+```js
+// Here is a code example
+
+export const codeWorks => true
+
+export const es6Ok => 'Heck yeah!'
+
+export class PrismWorks{
+  constructor(){
+    console.log('Yes, siree!')
+  }
+}
+```
