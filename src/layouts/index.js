@@ -42,7 +42,7 @@ const TemplateWrapper = ({ children, data }) => {
           <ul className='nav navbar-nav ml-auto'>
             {user && (
               <li className='nav-item'>
-                <Link to='/admin' className='nav-link'>Admin</Link>
+                <a href='/admin' className='nav-link'>Admin</a>
               </li>
             )}
             <li className='nav-item'>
