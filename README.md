@@ -25,9 +25,6 @@ npm start
 
 Follow the [Netlify CMS Quick Start Guide](https://www.netlifycms.org/docs/quick-start/#authentication) to set up authentication, and hosting.
 
-You should add the recommended post-build code, and save to Github, and enable all the stuff they mention in "Identity" section.
-
-
 ### Configuration
 
 Set your site's title in `gatsby-config.js`. Edit your pages with netlify CMS.
