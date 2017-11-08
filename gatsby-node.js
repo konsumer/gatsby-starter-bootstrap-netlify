@@ -12,7 +12,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             html
             id
             frontmatter {
-              templateKey
+              contentType
               path
               date
               title
@@ -28,7 +28,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({
         path: node.frontmatter.path,
-        component: path.resolve(`src/templates/${String(node.frontmatter.templateKey)}.js`),
+        component: path.resolve(`src/templates/${String(node.frontmatter.contentType)}.js`),
         context: {} // additional data can be passed via context
       })
     })
