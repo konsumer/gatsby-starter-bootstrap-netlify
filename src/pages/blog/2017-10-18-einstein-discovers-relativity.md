@@ -1,5 +1,5 @@
 ---
-templateKey: 'blog-post'
+contentType: blog
 path: /einstein
 title: Einstein Discovers Relativity
 date: 2017-10-18T17:12:33.962Z

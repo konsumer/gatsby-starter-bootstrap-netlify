@@ -1,5 +1,5 @@
 ---
-templateKey: 'blog-post'
+contentType: blog
 path: /claude
 title: Claude Shannon and Information Theory
 date: 2017-10-14T12:00:02.000Z

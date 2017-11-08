@@ -1,5 +1,5 @@
 ---
-templateKey: 'about-page'
+contentType: about
 path: /about
 title: About Me
 ---
