@@ -44,6 +44,7 @@ export default function Template ({ data }) {
           </Card>
         ))}
       </CardGroup></Container>)}
+      <Container id='disqus_thread' />
     </div>
   )
 }

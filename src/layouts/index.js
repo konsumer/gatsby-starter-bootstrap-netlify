@@ -16,6 +16,19 @@ const TemplateWrapper = ({ children, data }) => (
   <div>
     <Helmet>
       <title>{`Home | ${data.site.siteMetadata.title}`}</title>
+
+      {data.site.siteMetadata.disqus && (
+        <script id='dsq-count-scr' src='//gatsby-starter-blog.disqus.com/count.js' async />
+      )}
+      {data.site.siteMetadata.disqus && (
+        <script>{`(function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://${data.site.siteMetadata.disqus}.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();`}</script>
+      )}
+
       <script src='https://identity.netlify.com/v1/netlify-identity-widget.js' />
       <script>{`
         if (window.netlifyIdentity) {
@@ -52,6 +65,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        disqus
       }
     }
   }
