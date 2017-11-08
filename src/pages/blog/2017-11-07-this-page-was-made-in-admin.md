@@ -4,7 +4,7 @@ path: /demofromadmin
 title: This page was made in admin
 date: 2017-11-08T05:10:41.548Z
 ---
-![surveilance](/static/tumblr_nilmmbd4qq1ssby0io1_540.gif)
+![computer image](/img/tumblr_nilmmbd4qq1ssby0io1_540.gif)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique nunc et diam mattis, non venenatis erat feugiat. Duis eu mollis risus. Phasellus at purus ut lectus malesuada egestas. Aenean pretium interdum ante sit amet ullamcorper. In ut sem ac nibh consectetur venenatis ac id erat. Nunc vitae vehicula risus. Cras in justo imperdiet, pulvinar elit ut, dictum odio. Donec et pellentesque felis, posuere dignissim elit. Nunc sagittis eros sed felis condimentum tincidunt. Fusce sagittis varius ligula elementum tincidunt. Integer vel ipsum dictum, mattis nibh ac, mattis ipsum. Vivamus ultricies odio nec diam varius tristique. Duis sodales urna elit, ac posuere dui auctor sed. Donec in dui in sapien elementum vestibulum ac a turpis.
 
