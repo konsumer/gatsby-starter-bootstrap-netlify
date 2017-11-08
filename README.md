@@ -30,6 +30,33 @@ You should add the recommended post-build code, and save to Github, and enable a
 
 Set stuff up in `gatsby-config.js`. Edit your pages with netlify CMS.
 
+
+### Theming
+
+You can quickly load any theme from [bootswatch](https://bootswatch.com/) by editing `src/layouts/index.scss`, and switching out `cosmo` for one of these:
+
+* cerulean
+* cosmo
+* cyborg
+* darkly
+* flatly
+* journal
+* litera
+* lumen
+* lux
+* materia
+* minty
+* pulse
+* sandstone
+* simplex
+* sketchy
+* slate
+* solar
+* spacelab
+* superhero
+* united
+* yeti
+
 - - -
 
 ### Debugging
