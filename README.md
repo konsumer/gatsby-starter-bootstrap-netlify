@@ -27,15 +27,15 @@ Follow the [Netlify CMS Quick Start Guide](https://www.netlifycms.org/docs/quick
 
 ### Configuration
 
-Set your site's title in `gatsby-config.js`. If you set `disqus` to your id, it will be used for your comments, otherwise it will be left out. `author` and `authorLink` aren't currently used for anything, but maybe later.
+Set your site's title in `gatsby-config.js`. If you set `disqus` to your ID, it will be used for your comments, set it to `false` and it will be left out. It's currently set to `gatsby-starter-blog`, for the demo, but you can set it to your disqus ID. `author` and `authorLink` aren't currently used for anything, but maybe later.
 
 
 ### Theming
 
 You can quickly load any theme from [bootswatch](https://bootswatch.com/) by editing `src/layouts/index.scss`, and switching out `cosmo` for one of these:
 
-* cerulean
 * cosmo
+* cerulean
 * cyborg
 * darkly
 * flatly
@@ -55,5 +55,7 @@ You can quickly load any theme from [bootswatch](https://bootswatch.com/) by edi
 * superhero
 * united
 * yeti
+
+There's 2 lines to change.
 
 You can also comment/uncomment lines in that file to customize exactly what parts of bootstrap are loaded.
