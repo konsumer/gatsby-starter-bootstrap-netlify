@@ -19,23 +19,7 @@ const TemplateWrapper = ({ children, data }) => {
   }
   return (
     <div>
-      <Helmet>
-        <title>{`Home | ${data.site.siteMetadata.title}`}</title>
-
-        <script src='https://identity.netlify.com/v1/netlify-identity-widget.js' />
-        <script>{`
-          if (window.netlifyIdentity) {
-            window.netlifyIdentity.on('init', user => {
-              if (!user) {
-                window.netlifyIdentity.on('login', () => {
-                  document.location.href = '/admin/'
-                })
-              }
-            })
-          }
-        `}</script>
-
-      </Helmet>
+      <Helmet title={`Home | ${data.site.siteMetadata.title}`} />
       <div className='navbar navbar-expand-lg fixed-top navbar-dark bg-primary'>
         <Container>
           <Link to='/' className='navbar-brand'>{data.site.siteMetadata.title}</Link>
