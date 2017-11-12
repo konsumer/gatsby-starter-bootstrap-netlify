@@ -11,7 +11,6 @@ const IndexPage = ({ data }) => (
           <CardTitle><Link to={post.frontmatter.path}>{post.frontmatter.title}</Link></CardTitle>
           <CardSubtitle style={{marginBottom: 10}}>{post.frontmatter.date}</CardSubtitle>
           <CardText>{post.excerpt}</CardText>
-          <Link className='btn btn-primary' to={post.frontmatter.path}>Keep Reading</Link>
         </CardBody>
       </Card>
     ))}
