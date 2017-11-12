@@ -44,5 +44,17 @@
 @import "node_modules/bootswatch/dist/cosmo/bootswatch";
 
 body {
-  margin: 80px;
+  margin-top: 80px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.navbar-nav {
+  flex-direction: row!important;
+
+  & > * {
+    padding-left: 10px; 
+  }
 }

@@ -23,12 +23,12 @@ const TemplateWrapper = ({ children, data }) => {
       <div className='navbar navbar-expand-lg fixed-top navbar-dark bg-primary'>
         <Container>
           <Link to='/' className='navbar-brand'>{data.site.siteMetadata.title}</Link>
-          <ul className='nav navbar-nav ml-auto'>
-            {user && (
-              <li className='nav-item'>
-                <a href='/admin' className='nav-link'>Admin</a>
-              </li>
-            )}
+          <ul className='nav navbar-nav'>
+
+            <li className='nav-item'>
+              <a href='/admin' className='nav-link'>Admin</a>
+            </li>
+
             <li className='nav-item'>
               <Link to='/about' className='nav-link'>About</Link>
             </li>
