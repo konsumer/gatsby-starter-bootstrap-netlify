@@ -27,7 +27,7 @@ Follow the [Netlify CMS Quick Start Guide](https://www.netlifycms.org/docs/quick
 
 ### Configuration
 
-Set your site's title in `gatsby-config.js`. Edit your pages with netlify CMS.
+Set your site's title in `gatsby-config.js`. If you set `disqus` to your id, it will be used for your comments, otherwise it will be left out. `author` and `authorLink` aren't currently used for anything, but maybe later.
 
 
 ### Theming
