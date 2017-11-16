@@ -1,8 +1,36 @@
 // Bootstrap 4 & Bootswatch Cosmo theme
 // Feel free to comment out anything you're not using
 
-// bootswatch theme variables
+// Bootstrap 4 & Bootswatch Cosmo theme
+// Feel free to comment out anything you're not using
+
+@import url(https://cdn.rawgit.com/tonsky/FiraCode/1.204/distr/fira_code.css);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+//// bootswatch theme overrides
+// @import "node_modules/bootswatch/dist/cerulean/variables";
 @import "node_modules/bootswatch/dist/cosmo/variables";
+// @import "node_modules/bootswatch/dist/cyborg/variables";
+// @import "node_modules/bootswatch/dist/darkly/variables";
+// @import "node_modules/bootswatch/dist/flatly/variables";
+// @import "node_modules/bootswatch/dist/journal/variables";
+// @import "node_modules/bootswatch/dist/litera/variables";
+// @import "node_modules/bootswatch/dist/lumen/variables";
+// @import "node_modules/bootswatch/dist/lux/variables";
+// @import "node_modules/bootswatch/dist/materia/variables";
+// @import "node_modules/bootswatch/dist/minty/variables";
+// @import "node_modules/bootswatch/dist/pulse/variables";
+// @import "node_modules/bootswatch/dist/sandstone/variables";
+// @import "node_modules/bootswatch/dist/simplex/variables";
+// @import "node_modules/bootswatch/dist/sketchy/variables";
+// @import "node_modules/bootswatch/dist/slate/variables";
+// @import "node_modules/bootswatch/dist/solar/variables";
+// @import "node_modules/bootswatch/dist/spacelab/variables";
+// @import "node_modules/bootswatch/dist/superhero/variables";
+// @import "node_modules/bootswatch/dist/united/variables";
+// @import "node_modules/bootswatch/dist/yeti/variables";
+
+
 
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
@@ -27,7 +55,7 @@
 @import "node_modules/bootstrap/scss/card";
 // @import "node_modules/bootstrap/scss/breadcrumb";
 // @import "node_modules/bootstrap/scss/pagination";
-// @import "node_modules/bootstrap/scss/badge";
+@import "node_modules/bootstrap/scss/badge";
 // @import "node_modules/bootstrap/scss/jumbotron";
 // @import "node_modules/bootstrap/scss/alert";
 // @import "node_modules/bootstrap/scss/progress";
@@ -40,15 +68,64 @@
 // @import "node_modules/bootstrap/scss/carousel";
 @import "node_modules/bootstrap/scss/utilities";
 
-// bootswatch theme overrides
-@import "node_modules/bootswatch/dist/cosmo/bootswatch";
 
-body {
-  margin-top: 80px;
+//// bootswatch theme overrides
+// @import "node_modules/bootswatch/dist/cerulean/bootswatch";
+@import "node_modules/bootswatch/dist/cosmo/bootswatch";
+// @import "node_modules/bootswatch/dist/cyborg/bootswatch";
+// @import "node_modules/bootswatch/dist/darkly/bootswatch";
+// @import "node_modules/bootswatch/dist/flatly/bootswatch";
+// @import "node_modules/bootswatch/dist/journal/bootswatch";
+// @import "node_modules/bootswatch/dist/litera/bootswatch";
+// @import "node_modules/bootswatch/dist/lumen/bootswatch";
+// @import "node_modules/bootswatch/dist/lux/bootswatch";
+// @import "node_modules/bootswatch/dist/materia/bootswatch";
+// @import "node_modules/bootswatch/dist/minty/bootswatch";
+// @import "node_modules/bootswatch/dist/pulse/bootswatch";
+// @import "node_modules/bootswatch/dist/sandstone/bootswatch";
+// @import "node_modules/bootswatch/dist/simplex/bootswatch";
+// @import "node_modules/bootswatch/dist/sketchy/bootswatch";
+// @import "node_modules/bootswatch/dist/slate/bootswatch";
+// @import "node_modules/bootswatch/dist/solar/bootswatch";
+// @import "node_modules/bootswatch/dist/spacelab/bootswatch";
+// @import "node_modules/bootswatch/dist/superhero/bootswatch";
+// @import "node_modules/bootswatch/dist/united/bootswatch";
+// @import "node_modules/bootswatch/dist/yeti/bootswatch";
+
+
+
+// page-level layout
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  & > .pageContent {
+    flex: 1;
+    overflow: auto;
+    padding-top: 10px;
+  }
 }
 
 img {
   max-width: 100%;
+}
+
+code {
+  font-family: 'Fira Code';
+  font-feature-settings: "calt" 1;
+  background: inherit;
+}
+
+blockquote {
+  @extend .blockquote;
+  border-left: 3px solid #333;
+  padding-left: 1em;
+}
+
+hr {
+  border-color: #333;
 }
 
 .navbar-nav {
@@ -57,4 +134,13 @@ img {
   & > * {
     padding-left: 10px; 
   }
+}
+
+.mermaid > svg {
+  width: auto;
+  padding: 10px;
+}
+
+.tags a {
+  margin-right: 5px;
 }

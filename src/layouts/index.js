@@ -18,9 +18,9 @@ const TemplateWrapper = ({ children, data }) => {
     user = window.netlifyIdentity && window.netlifyIdentity.currentUser()
   }
   return (
-    <div>
+    <div className='App'>
       <Helmet title={`Home | ${data.site.siteMetadata.title}`} />
-      <div className='navbar navbar-expand-lg fixed-top navbar-dark bg-primary'>
+      <div className='navbar navbar-expand-lg navbar-dark bg-primary'>
         <Container>
           <Link to='/' className='navbar-brand'>{data.site.siteMetadata.title}</Link>
           <ul className='nav navbar-nav'>
@@ -37,7 +37,7 @@ const TemplateWrapper = ({ children, data }) => {
           </ul>
         </Container>
       </div>
-      <div>{children()}</div>
+      <div className='pageContent'>{children()}</div>
     </div>
   )
 }
