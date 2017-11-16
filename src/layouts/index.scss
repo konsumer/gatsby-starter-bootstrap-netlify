@@ -4,9 +4,6 @@
 // Bootstrap 4 & Bootswatch Cosmo theme
 // Feel free to comment out anything you're not using
 
-@import url(https://cdn.rawgit.com/tonsky/FiraCode/1.204/distr/fira_code.css);
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
-
 //// bootswatch theme overrides
 // @import "node_modules/bootswatch/dist/cerulean/variables";
 @import "node_modules/bootswatch/dist/cosmo/variables";
@@ -29,7 +26,6 @@
 // @import "node_modules/bootswatch/dist/superhero/variables";
 // @import "node_modules/bootswatch/dist/united/variables";
 // @import "node_modules/bootswatch/dist/yeti/variables";
-
 
 
 @import "node_modules/bootstrap/scss/functions";
@@ -93,7 +89,6 @@
 // @import "node_modules/bootswatch/dist/yeti/bootswatch";
 
 
-
 // page-level layout
 
 .App {
@@ -108,39 +103,10 @@
   }
 }
 
-img {
-  max-width: 100%;
-}
-
-code {
-  font-family: 'Fira Code';
-  font-feature-settings: "calt" 1;
-  background: inherit;
-}
-
-blockquote {
-  @extend .blockquote;
-  border-left: 3px solid #333;
-  padding-left: 1em;
-}
-
-hr {
-  border-color: #333;
-}
-
 .navbar-nav {
   flex-direction: row!important;
 
   & > * {
     padding-left: 10px; 
   }
-}
-
-.mermaid > svg {
-  width: auto;
-  padding: 10px;
-}
-
-.tags a {
-  margin-right: 5px;
 }
