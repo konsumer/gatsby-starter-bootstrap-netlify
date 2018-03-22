@@ -1,5 +1,7 @@
 # Gatsby Bootstrap Netlify Starter
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/konsumer/gatsby-starter-bootstrap-netlify.svg)](https://greenkeeper.io/)
+
 [Bootstrap 4](http://getbootstrap.com/), [bootswatch](https://bootswatch.com/) and netlify CMS starter for Gatsby
 
 This repo contains an example blog that is built with [Gatsby](https://www.gatsbyjs.org/), and [Netlify CMS](https://netlifycms.org): [demo](https://gatsby-starter-bootstrap-netlify.netlify.com)
