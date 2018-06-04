@@ -18,7 +18,7 @@
     "gatsby-transformer-remark": "^1.7.40",
     "prismjs": "^1.14.0",
     "react-helmet": "^5.2.0",
-    "reactstrap": "5.*"
+    "reactstrap": "^6.1.0"
   },
   "keywords": [
     "gatsby",
