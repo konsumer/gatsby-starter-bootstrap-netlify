@@ -27,14 +27,14 @@ collections:
       - {
           label: "Attachment",
           name: "attachments",
-          required: "false",
+          required: false,
           widget: "list",
           fields: [{ name: "filename", label: "Filename", widget: "file" }],
         }
       - {
           label: "Related Post",
           name: "related",
-          required: "false",
+          required: false,
           widget: "list",
           fields:
             [
