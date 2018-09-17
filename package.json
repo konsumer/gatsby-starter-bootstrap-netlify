@@ -7,7 +7,7 @@
     "bootstrap": "^4.1.0",
     "bootswatch": "4.*",
     "gatsby": "^1.9.253",
-    "gatsby-link": "^1.6.41",
+    "gatsby-link": "^2.0.1",
     "gatsby-plugin-netlify": "^1.0.7",
     "gatsby-plugin-offline": "^1.0.10",
     "gatsby-plugin-react-helmet": "^2.0.11",
