@@ -14,7 +14,7 @@
     "gatsby-plugin-sass": "^1.0.26",
     "gatsby-remark-copy-linked-files": "^1.5.32",
     "gatsby-remark-prismjs": "^2.0.1",
-    "gatsby-source-filesystem": "^1.5.33",
+    "gatsby-source-filesystem": "^2.0.1",
     "gatsby-transformer-remark": "^1.7.40",
     "prismjs": "^1.14.0",
     "react-helmet": "^5.2.0",
