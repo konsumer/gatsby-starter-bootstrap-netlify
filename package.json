@@ -10,7 +10,7 @@
     "gatsby-link": "^1.6.41",
     "gatsby-plugin-netlify": "^1.0.7",
     "gatsby-plugin-offline": "^1.0.10",
-    "gatsby-plugin-react-helmet": "^2.0.11",
+    "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-sass": "^1.0.26",
     "gatsby-remark-copy-linked-files": "^1.5.32",
     "gatsby-remark-prismjs": "^2.0.1",
