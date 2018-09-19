@@ -2,6 +2,8 @@ backend:
   name: git-gateway
   branch: master
 
+publish_mode: editorial_workflow
+
 media_folder: "/static/files/"
 public_folder: "/files/"
 
@@ -12,13 +14,40 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Content Type", name: "contentType", widget: "hidden", default: "blog"}
-      - {label: "Path", name: "path", widget: "string"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Attachment", name: "attachments", widget: "list", fields: [{name: "filename", label: "Filename", widget: "file"}] }
-      - {label: "Related Post", name: "related", widget: "list", fields: [{name: "post", label: "Post", widget: "relation", collection: "blog", searchFields: [name, path, title], valueField: path}] }
+      - {
+          label: "Content Type",
+          name: "contentType",
+          widget: "hidden",
+          default: "blog",
+        }
+      - { label: "Path", name: "path", widget: "string", default: "title" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - {
+          label: "Attachment",
+          name: "attachments",
+          required: false,
+          widget: "list",
+          fields: [{ name: "filename", label: "Filename", widget: "file" }],
+        }
+      - {
+          label: "Related Post",
+          name: "related",
+          required: false,
+          widget: "list",
+          fields:
+            [
+              {
+                name: "post",
+                label: "Post",
+                widget: "relation",
+                collection: "blog",
+                searchFields: [name, path, title],
+                valueField: path,
+              },
+            ],
+        }
 
   - name: "about"
     label: "About"
@@ -26,7 +55,12 @@ collections:
     create: false
     slug: "{{slug}}"
     fields:
-      - {label: "Content Type", name: "contentType", widget: "hidden", default: "about"}
-      - {label: "Path", name: "path", widget: "hidden", default: "/about"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {
+          label: "Content Type",
+          name: "contentType",
+          widget: "hidden",
+          default: "about",
+        }
+      - { label: "Path", name: "path", widget: "hidden", default: "/about" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
