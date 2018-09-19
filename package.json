@@ -6,7 +6,7 @@
   "dependencies": {
     "bootstrap": "^4.1.0",
     "bootswatch": "4.*",
-    "gatsby": "^1.9.253",
+    "gatsby": "^2.0.0",
     "gatsby-link": "^1.6.41",
     "gatsby-plugin-netlify": "^1.0.7",
     "gatsby-plugin-offline": "^1.0.10",
