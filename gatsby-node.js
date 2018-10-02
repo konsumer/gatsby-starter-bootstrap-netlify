@@ -1,8 +1,6 @@
 const path = require('path')
 
-exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { createPage } = boundActionCreators
-
+exports.createPages = ({ actions: { createPage }, graphql }) => {
   return graphql(`
     {
       allMarkdownRemark {

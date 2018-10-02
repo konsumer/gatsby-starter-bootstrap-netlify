@@ -1,0 +1,109 @@
+// Bootstrap 4 & Bootswatch Cosmo theme
+// Feel free to comment out anything you're not using
+
+//// bootswatch theme overrides
+// @import "bootswatch/dist/cerulean/variables";
+@import "bootswatch/dist/cosmo/variables";
+// @import "bootswatch/dist/cyborg/variables";
+// @import "bootswatch/dist/darkly/variables";
+// @import "bootswatch/dist/flatly/variables";
+// @import "bootswatch/dist/journal/variables";
+// @import "bootswatch/dist/litera/variables";
+// @import "bootswatch/dist/lumen/variables";
+// @import "bootswatch/dist/lux/variables";
+// @import "bootswatch/dist/materia/variables";
+// @import "bootswatch/dist/minty/variables";
+// @import "bootswatch/dist/pulse/variables";
+// @import "bootswatch/dist/sandstone/variables";
+// @import "bootswatch/dist/simplex/variables";
+// @import "bootswatch/dist/sketchy/variables";
+// @import "bootswatch/dist/slate/variables";
+// @import "bootswatch/dist/solar/variables";
+// @import "bootswatch/dist/spacelab/variables";
+// @import "bootswatch/dist/superhero/variables";
+// @import "bootswatch/dist/united/variables";
+// @import "bootswatch/dist/yeti/variables";
+
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/print";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/code";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/tables";
+// @import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+// @import "bootstrap/scss/transitions";
+// @import "bootstrap/scss/dropdown";
+// @import "bootstrap/scss/button-group";
+// @import "bootstrap/scss/input-group";
+// @import "bootstrap/scss/custom-forms";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/card";
+// @import "bootstrap/scss/breadcrumb";
+// @import "bootstrap/scss/pagination";
+@import "bootstrap/scss/badge";
+// @import "bootstrap/scss/jumbotron";
+// @import "bootstrap/scss/alert";
+// @import "bootstrap/scss/progress";
+// @import "bootstrap/scss/media";
+// @import "bootstrap/scss/list-group";
+// @import "bootstrap/scss/close";
+// @import "bootstrap/scss/modal";
+// @import "bootstrap/scss/tooltip";
+// @import "bootstrap/scss/popover";
+// @import "bootstrap/scss/carousel";
+@import "bootstrap/scss/utilities";
+
+
+//// bootswatch theme overrides
+// @import "bootswatch/dist/cerulean/bootswatch";
+@import "bootswatch/dist/cosmo/bootswatch";
+// @import "bootswatch/dist/cyborg/bootswatch";
+// @import "bootswatch/dist/darkly/bootswatch";
+// @import "bootswatch/dist/flatly/bootswatch";
+// @import "bootswatch/dist/journal/bootswatch";
+// @import "bootswatch/dist/litera/bootswatch";
+// @import "bootswatch/dist/lumen/bootswatch";
+// @import "bootswatch/dist/lux/bootswatch";
+// @import "bootswatch/dist/materia/bootswatch";
+// @import "bootswatch/dist/minty/bootswatch";
+// @import "bootswatch/dist/pulse/bootswatch";
+// @import "bootswatch/dist/sandstone/bootswatch";
+// @import "bootswatch/dist/simplex/bootswatch";
+// @import "bootswatch/dist/sketchy/bootswatch";
+// @import "bootswatch/dist/slate/bootswatch";
+// @import "bootswatch/dist/solar/bootswatch";
+// @import "bootswatch/dist/spacelab/bootswatch";
+// @import "bootswatch/dist/superhero/bootswatch";
+// @import "bootswatch/dist/united/bootswatch";
+// @import "bootswatch/dist/yeti/bootswatch";
+
+
+// page-level layout
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  & > .pageContent {
+    flex: 1;
+    overflow: auto;
+    padding-top: 10px;
+  }
+}
+
+.navbar-nav {
+  flex-direction: row!important;
+
+  & > * {
+    padding-left: 10px; 
+  }
+}
