@@ -33,5 +33,9 @@
     "build": "gatsby build",
     "start": "gatsby develop",
     "test": "gatsby build"
+  },
+  "devDependencies": {
+    "node-sass": "^4.10.0",
+    "raw-loader": "^0.5.1"
   }
 }
