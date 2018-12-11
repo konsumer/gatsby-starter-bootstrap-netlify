@@ -1,9 +1,8 @@
 import React from 'react'
 import { Container } from 'reactstrap'
 import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
+import { graphql, Link, StaticQuery } from 'gatsby'
 
 // code syntax-highlighting theme
 // feel free to change it to another one
